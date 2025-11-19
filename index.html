@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>homework</title>
+</head>
+<body>
+    <p id="display"></p>
+<button onclick="multiply(5,10)">Show</button>
+
+<script>
+
+    let text = "To be, or not to be, that is the question...";
+    let index = 0;
+
+    let timer = setInterval(function() {
+        document.write(text.charAt(index));
+        index++;
+
+        if (index === text.length) {
+            clearInterval(timer);
+
+            document.write("<br>");
+            document.write("William Shakespeare, from \"Hamlet\"");
+        }
+    }, 250); 
+</script>
+
+</body>
+</html>
